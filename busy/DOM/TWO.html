@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        window.onload = function () {  
+            var aA = document.getElementsByTagName('a');
+            var oUl = document.getElementById('ull');
+
+            for(var i=0;i<aA.length;i++){
+                aA[i].onclick = function () {  
+                    oUl.removeChild(this.parentNode);
+                };
+            }
+        };
+    </script>
+</head>
+<body>
+    <ul id="ull">
+        <li>sardonic<a href="javascript:;">删除</a></li>
+        <li>12324<a href="javascript:;">删除</a></li>
+        <li>sardonic<a href="javascript:;">删除</a></li>
+        <li>sardon发的哥萨斯关掉ic<a href="javascript:;">删除</a></li>
+        <li>sardo撒旦飞洒给nic<a href="javascript:;">删除</a></li>
+        <li>sard撒旦打广泛的和onic<a href="javascript:;">删除</a></li>
+    </ul>
+</body>
+</html>
